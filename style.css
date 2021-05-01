@@ -1,0 +1,24 @@
+
+html,body{
+    display: grid;
+    place-items: center;
+    height: 100%;
+    background-color: rgb(59, 55, 55);
+}
+
+.container{
+    width: fit-content;
+    height: fit-content;
+    background: linear-gradient(to right, rgb(26, 1, 255), rgb(255, 1, 192));
+    padding: 8px;
+}
+
+#time{
+    font-size: 100px;
+    padding: 15px 12px;
+    font-weight: bold;
+    font-family: 'Digital-7', arial;
+    background: linear-gradient(to right, rgb(255, 81, 0), #fff, rgb(77, 253, 8));
+    color: rgb(0, 0, 255);
+    text-shadow: 0px 0px 4px black;
+}

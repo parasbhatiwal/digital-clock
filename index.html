@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://allfont.net/allfont.css?fonts=digital-7" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <div id="time" >12:00:00</div>
+    </div>
+
+
+
+<script>
+ setInterval(() => {
+    const time = document.querySelector("#time");
+    let date = new Date();
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+   
+
+    if (seconds<10) {
+      seconds = "0"+ date.getSeconds();
+
+    } else {
+      seconds =  date.getSeconds();
+
+    }
+
+    if (minutes<10) {
+        minutes = "0"+ date.getMinutes();
+
+    } else {
+        minutes =  date.getMinutes();
+
+    }
+
+    if (hours<10) {
+        hours = "0"+ date.getHours();
+
+    } else {
+        hours =  date.getHours();
+
+    }
+
+    time.textContent = hours + ":" + minutes +":"+ seconds;
+
+ }, 1000);
+</script>
+
+</body>
+</html>
